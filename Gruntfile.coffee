@@ -36,11 +36,7 @@ module.exports = (grunt) ->
             runnw:
                 options:
                     stdout: true
-                command: [
-                    './build/cache/mac/0.9.2/node-webkit.app/Contents/MacOS/node-webkit . --debug'
-                ,
-                    '.\\build\\cache\\win\\0.9.2\\nw.exe . --debug'
-                ].join('&')
+                command: './build/cache/mac/0.9.2/node-webkit.app/Contents/MacOS/node-webkit . --debug'
             create_dmg:
                 options:
                     stdout: true
